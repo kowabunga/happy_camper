@@ -1,0 +1,47 @@
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  background-color: #212529;
+}
+
+.slight-text-shadow {
+  text-shadow: 0 2px 3px #2f2e41;
+}
+
+.text-color-hover:hover {
+  color: #7a72fe;
+}
+
+.icon-size {
+  font-size: 4rem;
+}
+
+.card-background {
+  background-color: rgb(253, 253, 253) !important;
+}
+
+.card-row-height {
+  height: 450px;
+}
+
+.space-maker {
+  height: 2500px;
+}
+
+.special-nav-link {
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  border-top-right-radius: 1.25rem !important;
+  border-bottom-right-radius: 1.25rem !important;
+}
+
+.no-interact {
+  pointer-events: none;
+}
