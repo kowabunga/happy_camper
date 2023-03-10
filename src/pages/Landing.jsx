@@ -15,7 +15,7 @@ const LandingPage = () => {
           <h1 className='display-4 slight-text-shadow'>
             Take a Rest - Short or Long
           </h1>
-          <p className='d-none d-sm-block lead slight-text-shadow'>
+          <p className='d-none d-sm-block slight-text-shadow'>
             You've journeyed long and far. Traversed mountains, fought monsters,
             and remained victorious.
           </p>
@@ -36,22 +36,24 @@ const LandingPage = () => {
                 <i className='bi bi-file-person'></i>
               </div>
               <div className='card-title lead fs-3 text-primary'>
-                Characters
+                Plan Ahead
               </div>
-              <div className='card-subtitle text-muted mb-3'>Dream On</div>
+              <div className='card-subtitle text-muted mb-3'>
+                Stay Organized
+              </div>
               <p className='card-text'>
-                Add your characters - their personalities, skills, and riches.
-                Keep track of how they grow to use to your advantage.
+                Your love of camping shouldn't be impeded by the work needed to
+                organize a successful trip. Let us help you keep it organized.
               </p>
               <div className='d-flex align-items-center justify-content-around'>
-                <Link to='/learn-more/characters'>
+                <Link to='/learn-more/organization'>
                   <button className='btn btn-secondary text-light'>
                     Learn More
                   </button>
                 </Link>
                 <Link to='/user/character/create'>
                   <button className='btn btn-outline-secondary'>
-                    Create Character
+                    Create Trip
                   </button>
                 </Link>
               </div>
@@ -62,11 +64,11 @@ const LandingPage = () => {
               <div className='icon-size mb-3 text-secondary text-center'>
                 <i className='bi bi-door-open'></i>
               </div>
-              <div className='card-title lead fs-3 text-primary'>Campaigns</div>
+              <div className='card-title lead fs-3 text-primary'>Explore</div>
               <div className='card-subtitle text-muted mb-3'>Adventure On</div>
               <p className='card-text'>
-                Open the door to a world of magic and dungeons. Keep track of
-                who's in your campaign, their levels and more.
+                While we've been helping you organize, we've also taken the
+                opportunity to research some camp grounds for you. Take a look!
               </p>
               <div className='d-flex align-items-center justify-content-around'>
                 <Link to='/learn-more/campaigns'>
@@ -77,7 +79,7 @@ const LandingPage = () => {
                 </Link>
                 <Link to='/user/campaign/create'>
                   <button className='btn btn-outline-secondary'>
-                    Create Campaign
+                    View Locations
                   </button>
                 </Link>
               </div>
@@ -90,18 +92,18 @@ const LandingPage = () => {
         <div className='d-md-flex align-items-center justify-content-around'>
           <div>
             <h2 className=' text-capitalize display-5 mb-4'>
-              Create Today, Conquer Tomorrow
+              Create Today, Explore Tomorrow
             </h2>
-            <p className='lead'>
-              Build your campaigns, create your characters and conquer the world
-              of your creations.
+            <p>
+              Build your own camping experience. Take the command, organize your
+              needs and goals and set out for an amazing experience.
             </p>
             <div className='d-md-flex align-items-center justify-content-around'>
               <button className='btn btn-md-lg btn-outline-light m-1'>
-                Create Character
+                Create Trip
               </button>
               <button className='btn btn-md-lg btn-outline-light m-1'>
-                Create Campaign
+                View Locations
               </button>
             </div>
           </div>

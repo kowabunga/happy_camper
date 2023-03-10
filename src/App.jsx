@@ -7,7 +7,7 @@ import HomePage from './pages/HomePage';
 import NotFoundPage from './pages/NotFoundPage';
 import LandingPage from './pages/Landing';
 import LearnMorePage from './pages/Learn More/LearnMorePage';
-import LearnMoreCharacters from './pages/Learn More/LearnMoreCharacter';
+import LearnMoreCampGrounds from './pages/Learn More/LearnMoreCampGrounds';
 import LearnMoreCampaigns from './pages/Learn More/LearnMoreCampaigns';
 import SignUpPage from './pages/SignUpPage';
 import SignInPage from './pages/SignInPage';
@@ -29,7 +29,7 @@ export default function App() {
             <Route path='/' element={<HomePage />}>
               <Route index element={<LandingPage />} />
               <Route path='learn-more' element={<LearnMorePage />}>
-                <Route path='characters' element={<LearnMoreCharacters />} />
+                <Route path='campgrounds' element={<LearnMoreCampGrounds />} />
                 <Route path='campaigns' element={<LearnMoreCampaigns />} />
               </Route>
               <Route path='signup' element={<SignUpPage />} />

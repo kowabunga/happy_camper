@@ -13,7 +13,7 @@ const Navbar = () => {
     <nav className='navbar navbar-expand-md navbar-dark bg-dark'>
       <div className='container'>
         <Link to='/' className='navbar-brand'>
-          D&D ToGo
+          HappyCamper
         </Link>
         <button
           className='navbar-toggler'

@@ -1,12 +1,12 @@
 import { useEffect } from 'react';
 import { Outlet, NavLink, useNavigate, useLocation } from 'react-router-dom';
 import undrawEducation from '/assets/images/undraw_education_f8ru.svg';
-const LearnMorePage = () => {
+export default function LearnMorePage() {
   const navigate = useNavigate(),
     location = useLocation();
   useEffect(() => {
     if (location.pathname === '/learn-more') {
-      navigate('/learn-more/characters', { replace: true });
+      navigate('/learn-more/campgrounds', { replace: true });
     }
   }, [navigate]);
 
@@ -16,9 +16,10 @@ const LearnMorePage = () => {
         <div className='d-md-flex align-items-center justify-content-around'>
           <div>
             <h1 className='display-4'>Learn More</h1>
-            <p className='lead'>
-              We offer you, the Dungeon Master or the Player, the ability to
-              organize, read, and update your characters and campaigns easily.
+            <p>
+              We offer you the organizer, the camper, and the in-between the
+              ability to create and plan an amazing experience with as much ease
+              as is possible. Find out how we can help you.
             </p>
           </div>
           <div>
@@ -31,40 +32,27 @@ const LearnMorePage = () => {
         </div>
         <div className='mt-5 pt-4'>
           <h2 className='mb-3'>
-            We offer services to help make your Dungeons & Dragons play seamless
-            and convenient.
+            We offer services to help make planning your next camping trip easy
+            and fun.
           </h2>
-          <p className='fs-5'>
-            As a player you can easily create a character and update its
-            information when necessary - never loose that character sheet again!
+          <p>
+            Learn about campgrounds, tools and other essentials you need for a
+            successful trip. Also, we'll keep it organized for you.
           </p>
-          <p className='fs-5'>
-            As a Dungeon Master, create and organize your campaigns, items,
-            who's playing in your campaigns and their characters and more.
-          </p>
-        </div>
-      </section>
-      <section className='mt-5 pb-3 border-bottom'>
-        <h2 className='text-center display-5'>Begin Today!</h2>
-        <div className='d-flex align-items-center justify-content-around'>
-          <button className='btn btn-lg btn-secondary'>Create Character</button>
-          <button className='btn btn-lg btn-outline-secondary'>
-            Create Campaign
-          </button>
         </div>
       </section>
       <section className='p-5'>
-        <h3 className='text-center text-capitalize h2'>Learn More</h3>
+        <h3 className='text-center text-capitalize h2'>Learn About:</h3>
         <nav>
           <ul className='nav nav-tabs d-flex justify-content-center'>
             <li className='nav-item mx-1'>
-              <NavLink to='/learn-more/characters' className='nav-link'>
-                Characters
+              <NavLink to='/learn-more/campgrounds' className='nav-link'>
+                Camp Grounds
               </NavLink>
             </li>
             <li className='nav-item mx-1'>
               <NavLink to='/learn-more/campaigns' className='nav-link'>
-                Campaigns
+                Gear
               </NavLink>
             </li>
           </ul>
@@ -76,5 +64,4 @@ const LearnMorePage = () => {
       <Outlet />
     </>
   );
-};
-export default LearnMorePage;
+}
